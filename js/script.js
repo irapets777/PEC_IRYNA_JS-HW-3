@@ -22,14 +22,14 @@ function gcd(FIRST_USER_NUMBER, SECOND_USER_NUMBER) {
     while(FIRST_USER_NUMBER != SECOND_USER_NUMBER){
         if(FIRST_USER_NUMBER>SECOND_USER_NUMBER) {
             FIRST_USER_NUMBER -= SECOND_USER_NUMBER;
+        }else if(FIRST_USER_NUMBER <=0 && SECOND_USER_NUMBER <=0){
+            alert('Зараз я тебе на 0 поділю');
         }
         else {
             SECOND_USER_NUMBER -= FIRST_USER_NUMBER;
         }
     }
     return FIRST_USER_NUMBER;
-}if(FIRST_USER_NUMBER <=0 && SECOND_USER_NUMBER <=0){
-    alert('Зараз я тебе на 0 поділю')
 }
 
 let result = gcd(FIRST_USER_NUMBER, SECOND_USER_NUMBER);
